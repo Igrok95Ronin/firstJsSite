@@ -96,16 +96,39 @@ a {
 }
 //services
 .services {
+    color: #666;
 }
 .services__title {
+    font-size: 20px;
+    padding: 16px 0;
+    text-align: center;
+    
 }
 .services__box {
-}
-.services__left {
+    padding: 8px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .item {
+    padding: 8px 24px;
+    list-style: none;
+    font-size: 17px;
+    position: relative;
+    &::before {
+        content: "\e901";
+        font-family: 'icomoon';
+        color: #17a2b8;
+        position: absolute;
+        font-size: 25px;
+        left: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
-.services__right {
-}
+
 .services__dscr {
+    text-align: center;
+    font-weight: 700;
+    padding: 20px 90px;
+    margin-top: 10px;
 }
