@@ -95,7 +95,44 @@ window.addEventListener('DOMContentLoaded', function () {
     DISCOUNTSTITLE.insertAdjacentText('afterbegin', 'МЫ РАБОТАЕМ 24 ЧАСА СУТКИ СКИДКИ ПОСТОЯННЫМ КЛИЕНТАМ');
     DISCOUNTSBTN.insertAdjacentText('afterbegin', '111222333');
 
+    //pros
+    discounts.insertAdjacentHTML('afterend', '<section> <div> <h2></h2><div> <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div> </div> </div> </section>')
+    const PROS = document.querySelectorAll('section');
 
+    let [, , , pros] = PROS;
+
+    const PROSCONTAINER = pros.querySelector('div'),
+        PROSTITLE = PROSCONTAINER.querySelector('h2'),
+        PROSBOX = PROSCONTAINER.querySelector('div'),
+        NAMEDSCR = PROSBOX.querySelectorAll('div');
+
+        let [one, two, three, four, five, six, seven, eight] = NAMEDSCR;
+
+    pros.classList.add('pros');
+    PROSCONTAINER.classList.add('container');
+    PROSTITLE.classList.add('pros__title');
+    PROSBOX.classList.add('pros__box');
+    one.classList.add('pros__name');
+    two.classList.add('pros__dscr');
+    three.classList.add('pros__name');
+    four.classList.add('pros__dscr');
+    five.classList.add('pros__name');
+    six.classList.add('pros__dscr');
+    seven.classList.add('pros__name');
+    eight.classList.add('pros__dscr');
+
+    PROSTITLE.insertAdjacentText('afterbegin', 'НАШИ ПЛЮСЫ:');
+    one.insertAdjacentText('afterbegin', 'ОПЕРАТИВНОСТЬ');
+    two.insertAdjacentText('afterbegin', 'Наша компания работает в круглосуточном режиме и выезжает к клиенту в кратчайшие сроки.');
+    three.insertAdjacentText('afterbegin', 'ДОСТУПНОСТЬ');
+    four.insertAdjacentText('afterbegin', 'Тщательно изучив стоимость услуг конкурентов, мы сформировали для вас самые низкие цены.');
+    five.insertAdjacentText('afterbegin', 'ОТВЕТСТВЕННОСТЬ');
+    six.insertAdjacentText('afterbegin', 'Мы настроены на добропорядочные, честные и долгосрочные отношения с клиентом.');
+    seven.insertAdjacentText('afterbegin', 'ОПЫТ РАБОТЫ');
+    eight.insertAdjacentText('afterbegin', 'Наши мастера имеют опыт работы от 8 лет, работаем качественно, на совесть.');
+    
+    
+    
 
 
 
