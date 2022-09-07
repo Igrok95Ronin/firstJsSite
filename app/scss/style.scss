@@ -125,10 +125,25 @@ a {
         transform: translateY(-50%);
     }
 }
-
 .services__dscr {
     text-align: center;
     font-weight: 700;
     padding: 20px 90px;
     margin-top: 10px;
+}
+//discounts
+.discounts {
+}
+.discounts__box {
+    background-color: #17a2b8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    color: #fff;
+}
+.discounts__title {
+    font-size: 16px;
+    width: 320px;
+    line-height: 25px;
 }

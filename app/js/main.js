@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', function () {
     fonImg.insertAdjacentHTML('afterend', '<section> <div> <h2></h2><div> <div> <ul> <li></li><li></li><li></li><li></li> </ul> </div><div> <ul> <li></li><li></li><li></li><li></li> </ul> </div> </div><div></div> </div> </section>');
     const section = document.querySelectorAll('section');
 
-    let [, services] = section;//Деструктуризация
+    let [, services,] = section;//Деструктуризация
 
     const servicesContainer = services.querySelector('div'),
         servicesTitle = servicesContainer.querySelector('h2'),
@@ -72,6 +72,28 @@ window.addEventListener('DOMContentLoaded', function () {
     li7.insertAdjacentText('afterbegin', 'УСТАНОВКА ВАННЫ');
     li8.insertAdjacentText('afterbegin', 'И МНОГОЕ ДРУГОЕ...');
     servicesDscr.insertAdjacentText('afterbegin', 'Все виды сантехнических услуг, позвоните нам, чтобы уточнить нужную Вам услугу! Пенсионерам и инвалидам скидка 10% на все услуги.');
+
+    //discounts
+    services.insertAdjacentHTML('afterend', '<section> <div> <div> <h2></h2><a></a> </div> </div> </section>');
+    const DISCOUNTS = document.querySelectorAll('section');
+
+    let [, , discounts] = DISCOUNTS;
+
+    const DISCOUNTSCONTAINER = discounts.querySelector('div'),
+        DISCOUNTSBOX = DISCOUNTSCONTAINER.querySelector('div'),
+        DISCOUNTSTITLE = DISCOUNTSBOX.querySelector('h2'),
+        DISCOUNTSBTN = DISCOUNTSBOX.querySelector('a');
+
+    discounts.classList.add('discounts');
+    DISCOUNTSCONTAINER.classList.add('container');
+    DISCOUNTSBOX.classList.add('discounts__box');
+    DISCOUNTSTITLE.classList.add('discounts__title');
+    DISCOUNTSBTN.classList.add('btn');
+
+    DISCOUNTSBTN.setAttribute('href', '#');
+
+    DISCOUNTSTITLE.insertAdjacentText('afterbegin', 'МЫ РАБОТАЕМ 24 ЧАСА СУТКИ СКИДКИ ПОСТОЯННЫМ КЛИЕНТАМ');
+    DISCOUNTSBTN.insertAdjacentText('afterbegin', '111222333');
 
 
 
