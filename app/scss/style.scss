@@ -132,7 +132,8 @@ a {
     margin-top: 10px;
 }
 //discounts
-.discounts__box {
+.discounts__box,
+.hours__box {
     background-color: #17a2b8;
     display: flex;
     align-items: center;
@@ -140,7 +141,8 @@ a {
     padding: 16px 24px;
     color: #fff;
 }
-.discounts__title {
+.discounts__title,
+.hours__title {
     font-size: 16px;
     width: 320px;
     line-height: 25px;
@@ -173,4 +175,16 @@ a {
 }
 .pros__dscr {
     font-size: 14px;
+}
+//hours
+.hours {
+ padding: 20px 0 10px;
+ background-color: #fff;
+ width: 900px;
+ margin: 0 auto;
+}
+
+.hours__title {
+}
+.btn {
 }

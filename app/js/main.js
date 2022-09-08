@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function () {
     'use strict';
-    //
+
     const body = document.querySelector('body');
     //header
     body.insertAdjacentHTML('afterbegin', '<header> <div> <div> <h1></h1><a></a> </div> </div> </header>');
@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', function () {
     fonImg.insertAdjacentHTML('afterend', '<section> <div> <h2></h2><div> <div> <ul> <li></li><li></li><li></li><li></li> </ul> </div><div> <ul> <li></li><li></li><li></li><li></li> </ul> </div> </div><div></div> </div> </section>');
     const section = document.querySelectorAll('section');
 
-    let [, services,] = section;//Деструктуризация
+    let [, services] = section;
 
     const servicesContainer = services.querySelector('div'),
         servicesTitle = servicesContainer.querySelector('h2'),
@@ -43,7 +43,7 @@ window.addEventListener('DOMContentLoaded', function () {
         servicesRight = servicesBox.querySelectorAll('div'),
         servicesDscr = servicesContainer.lastElementChild;
 
-    let [, right] = servicesRight;//Деструктуризация
+    let [, right] = servicesRight;
     const ulLiItemR = right.querySelectorAll('li');
 
     services.classList.add('services');
@@ -106,7 +106,7 @@ window.addEventListener('DOMContentLoaded', function () {
         PROSBOX = PROSCONTAINER.querySelector('div'),
         NAMEDSCR = PROSBOX.querySelectorAll('div');
 
-        let [one, two, three, four, five, six, seven, eight] = NAMEDSCR;
+    let [one, two, three, four, five, six, seven, eight] = NAMEDSCR;
 
     pros.classList.add('pros');
     PROSCONTAINER.classList.add('container');
@@ -130,20 +130,27 @@ window.addEventListener('DOMContentLoaded', function () {
     six.insertAdjacentText('afterbegin', 'Мы настроены на добропорядочные, честные и долгосрочные отношения с клиентом.');
     seven.insertAdjacentText('afterbegin', 'ОПЫТ РАБОТЫ');
     eight.insertAdjacentText('afterbegin', 'Наши мастера имеют опыт работы от 8 лет, работаем качественно, на совесть.');
-    
-    
-    
 
+    //hours
+    pros.insertAdjacentHTML('afterend', '<section> <div> <div> <h2></h2><a></a> </div> </dvi> </section>');
+    const HOURS = document.querySelectorAll('section');
 
+    let [, , , , hours] = HOURS;
 
+    const HOURSCONTAINER = hours.querySelector('div'),
+        HOURSBOX = HOURSCONTAINER.querySelector('div'),
+        HOURSTITLE = HOURSBOX.querySelector('h2'),
+        HOURSBTN = HOURSBOX.querySelector('a');
 
+    hours.classList.add('hours');
+    HOURSCONTAINER.classList.add('container');
+    HOURSBOX.classList.add('hours__box');
+    HOURSTITLE.classList.add('hours__title');
+    HOURSBTN.classList.add('btn');
 
+    HOURSBTN.setAttribute('href', '#');
 
+    HOURSTITLE.insertAdjacentText('afterbegin', 'МЫ РАБОТАЕМ 24 ЧАСА СУТКИ СКИДКИ ПОСТОЯННЫМ КЛИЕНТАМ');
+    HOURSBTN.insertAdjacentText('afterbegin', '111222333');
 
-
-
-
-
-
-    //
 })
